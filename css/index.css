@@ -1,0 +1,110 @@
+/* Código */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Secular+One&display=swap');
+
+.section {
+  background-image: linear-gradient(to bottom,
+      rgba(156, 156, 49, 0.5),
+      rgba(0, 0, 255, 0.5)), url("/img/section-bg.jpeg");
+  height: 90vh;
+  background-size: cover;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% auto;
+}
+
+.section_article {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 1em;
+  padding-left: 1em;
+  align-self: center;
+  justify-content: center;
+  color: white;
+}
+
+.section_aside {
+  display: flex;
+  align-self: center;
+  justify-self: flex-start;
+  padding: 1.5em;
+}
+
+.section_aside img {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.section_article>p {
+  font-size: 1em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.hi {
+  display: flex;
+  justify-self: flex-start;
+  align-self: center;
+  font-family: 'Secular One', sans-serif;
+  text-shadow: 2px 2px 4px #000000;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 1.4em;
+  padding: 1.1em;
+  background-color: #ED532D;
+  border-radius: 10px;
+}
+
+.name {
+  display: flex;
+  justify-self: flex-start;
+  align-self: center;
+  font-family: 'Roboto Mono', monospace;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+@media screen and (max-width:768px) {
+  body{
+    background-color: rgb(164, 166, 168);
+  }
+  .section {
+    display: grid;
+    padding-top: 15vh;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    background-size: cover;
+  }
+
+  .name {
+    font-size: 1.2em;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .hi {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.3em;
+  }
+
+  .section_article>p {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    font-weight: bold;
+    font-size: .8em;
+  }
+
+  .section_aside {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    height: 40vh;
+  }
+
+  .section_aside img {
+    height: 40vh;
+  }
+}
