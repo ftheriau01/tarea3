@@ -12,31 +12,35 @@
     --negro: #ececec;
   }
 }
+
 @media (prefers-reduced-motion: reduce) {
   * {
     -webkit-animation: none !important;
-            animation: none !important;
+    animation: none !important;
     -webkit-transition: none !important;
     transition: none !important;
   }
 }
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   vertical-align: baseline;
 }
+
 img, picture, video, iframe, figure {
   max-width: 100%;
   width: 100%;
   display: block;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center center;
-     object-position: center center;
+  object-position: center center;
 }
+
 a {
   display: block;
   text-decoration: none;
@@ -73,6 +77,7 @@ blockquote:before, blockquote:after, q:before, q:after {
   background-color: var(--negro);
   color: var(--blanco);
 }
+
 ::selection {
   background-color: var(--negro);
   color: var(--blanco);
@@ -82,14 +87,14 @@ form, input, textarea, select, button, label {
   font-family: inherit;
   font-size: inherit;
   -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   background-color: transparent;
   display: block;
 
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 table, tr, td {
@@ -102,6 +107,7 @@ svg {
   display: block;
   fill: currentColor;
 }
+
 body {
   min-height: 100vh;
   font-size: 100%;

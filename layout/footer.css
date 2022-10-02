@@ -6,7 +6,7 @@
   background-color: rgb(39, 38, 38);
   border-top: .2em rgba(75, 26, 26, 0.808) solid;
   color: #fff;
-  
+
   bottom: 0px;
 }
 
@@ -35,7 +35,7 @@
 @media screen and (max-width:768px) {
   .footer {
     bottom: 0%;
-    
+
     border-top: .2em rgba(75, 26, 26, 0.808) solid;
     margin-top: 10px;
   }
