@@ -68,7 +68,7 @@ body {
   }
   .section {
     display: grid;
-    padding-top: 16vh;
+    padding-top: 14vh;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
     background-size: cover;
@@ -104,6 +104,6 @@ body {
   }
 
   .section_aside img {
-    height: 40vh;
+    height: 41vh;
   }
 }
