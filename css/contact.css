@@ -76,7 +76,7 @@ tbody>tr:hover {
 
 @media screen and (max-width:576px) {
   .section{
-    padding-top: 10vh;
+    padding-top: 8vh;
   }
   .section_text{
     font-size: 1.3em;
