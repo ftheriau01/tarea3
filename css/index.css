@@ -71,7 +71,7 @@ body {
     padding-top: 14vh;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
-    background-size: cover;
+
   }
 
   .name {
