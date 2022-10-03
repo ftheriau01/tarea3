@@ -91,10 +91,10 @@ tbody>tr:hover {
     align-self: center;
   }
   .table_thead{
-    font-size: .9em;
+    font-size: 1em;
   }
   tbody>tr {
     padding: 0em;
-    font-size: .6em;
+    font-size: .7em;
   } 
 }
