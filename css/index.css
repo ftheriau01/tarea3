@@ -68,7 +68,7 @@ body {
   }
   .section {
     display: grid;
-    padding-top: 15vh;
+    padding-top: 16vh;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
     background-size: cover;
@@ -93,7 +93,7 @@ body {
     justify-self: center;
     align-self: center;
     font-weight: bold;
-    font-size: .8em;
+    font-size: .7em;
   }
 
   .section_aside {
