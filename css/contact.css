@@ -1,20 +1,22 @@
 /* Código */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Secular+One&display=swap');
+body {
+  background-image: url(/img/section-bg.jpeg);
+}
 .section{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  
   padding-top: 10vh;
   background-image: linear-gradient(to bottom,
       rgba(156, 156, 49, 0.5),
-      rgba(0, 0, 255, 0.5)), url("/img/section-bg.jpeg");
+      rgba(0, 0, 255, 0.5));
   background-size: cover;
   width: 100%;
 }
 .section_text{
   display: grid;
-  padding: .8em 1.1em;
+  padding: .8em 1em;
   background-color: #ED532D;
   color: #fff;
   font-size: 1.4em;
@@ -29,17 +31,18 @@
 
 .table{
   display: grid;
-  padding: 0% 10%;
+  padding: 0% 5%;
 }
 
 .table_thead{
   color: #fff;
-  font-size: 1.3em;
+  font-size: 1.2em;
   text-shadow: 2px 2px 5px #000000;
 }
 tbody>tr{
   color: #fff;
   font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
 }
 th, td {
   border-bottom: 1px solid #ddd;
@@ -54,19 +57,33 @@ tbody>tr:hover {
   background-color: #ed532dc9;
   color: #fff;
 }
-@media screen and (max-width:768px) {
-  body{
-    background-color: rgb(123, 140, 158);
+@media screen and (max-width:992px) {
+  .section_text{
+    font-size: 1.1em;
   }
+  .table{
+    margin-top: .8vh;
+    padding: 0em 1em;
+  }
+  .table_thead{
+    font-size: .9em;
+  }
+  tbody>tr {
+    padding: .0em;
+    font-size: .7em;
+  } 
+}
+
+@media screen and (max-width:576px) {
   .section{
-    padding-top: 9vh;
+    padding-top: 10vh;
   }
   .section_text{
     font-size: 1.3em;
   }
   .table{
     width: 100%;
-    padding: 0em 2em;
+    padding: 0em 1em;
     display: grid;
     overflow-y: auto;
     margin-top: 1vh;
@@ -74,11 +91,10 @@ tbody>tr:hover {
     align-self: center;
   }
   .table_thead{
-    font-size: .8em;
+    font-size: .9em;
   }
   tbody>tr {
-    padding: .0em;
+    padding: 0em;
     font-size: .6em;
-  }
-  
+  } 
 }
